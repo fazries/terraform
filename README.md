@@ -12,7 +12,7 @@ $ terraform apply
 ## Using module EC2 
 You can use this in your terraform template with the following steps.
   1. Adding a module resource to your template, e.g main.tf
-  
+```  
 	module "ec2_instance" {
 	   source = "ec2_module/base"
 	   instance_type = "${var.Str_instance_type}"
@@ -21,8 +21,9 @@ You can use this in your terraform template with the following steps.
 	   subnet_id     = "${var.Str_subnet_id}"
            number_of_instance = "${var.Str_num_instance}"
 	}
-
+```
   2. Setting values for the following variables, either through terraform.tfvars or -var argument on the CLI
+```
         Str_secret_key
 	Str_access_key
 	Str_instance_type
@@ -31,7 +32,7 @@ You can use this in your terraform template with the following steps.
 	Str_subnet_id
 	Lst_security_group_ids_
 	Map_tags
-
+```
 ## Using module SecurityGroups
 You can use this in your terraform template with the following steps.
   1. Adding a module resource to your template, e.g main.tf
