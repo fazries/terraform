@@ -27,11 +27,11 @@ variable "Str_instance_type" {
    default     = "t2.micro"
 }
 
-varibale "Str_instance_name" {
+variable "Str_instance_name" {
    description = "The instance name"
 }
 
-varibale "Str_subnet_id" {
+variable "Str_subnet_id" {
    description = "The subnet for the instance"
 }
 

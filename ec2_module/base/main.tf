@@ -1,8 +1,8 @@
-provider "aws"{
-   access_key = "${var.Str_access_key}"
-   secret_key = "${var.Str_secret_key}"
-   region     = "${var.Lst_region[0]}"
-}
+#provider "aws"{
+#   access_key = "${var.Str_access_key}"
+#   secret_key = "${var.Str_secret_key}"
+#   region     = "${var.Lst_region[0]}"
+#}
 
 resource "aws_instance" "ec2_instance" {
    ami           = "${lookup(var.Map_ami_id, var.Lst_region[0])}"
