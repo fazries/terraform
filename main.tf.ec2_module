@@ -1,0 +1,8 @@
+module "ec2_instance" {
+	   source = "ec2_module/base"
+	   instance_type = "${var.Str_instance_type}"
+	   instance_name = "${var.Str_instance_name}"
+           ami_id	 = "${var.Map_ami_id[0]}"
+	   subnet_id     = "${var.Str_subnet_id}"
+           number_of_instance = "${var.Str_num_instance}"
+	}
