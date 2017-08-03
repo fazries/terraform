@@ -1,6 +1,6 @@
 resource "aws_security_group" "main_security_group" {
 	name        = "${var.Str_secgroup_name}"
-	description ="tf-sg-${var.Str_secgroup_name}"
+	description = "tf-sg-${var.Str_secgroup_name}"
 	vpc_id      = "${var.Str_vpc_id}"
 }
 
